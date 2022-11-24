@@ -27,10 +27,11 @@ predicoes = model.predict(features_teste)
 
 
 st.title('Aplicativo de IA')
-SepalLengthCm = st.number_input('Digite o comprimento do caule')
-SepalWidthCm = st.number_input('Digite a largura do caule')
-PetalLengthCm = st.number_input('Digite o comprimento da petala')
-PetalWidthCm = st.number_input('Digite a largura da petala')
+Age = st.number_input('Digite a idade')
+SystolicBP = st.number_input('Digite a pressao sistolica')
+DiastolicBP = st.number_input('Digite a pressao diastolica')
+BodyTemp = st.number_input('Digite a temperatura corporal')
+HeartRate = st.number_input('Digite a frequencia cardiaca')
 if st.button('Clique aqui'):
   resultado = model.predict([[SepalLengthCm,SepalWidthCm,PetalLengthCm,PetalWidthCm]])
   
