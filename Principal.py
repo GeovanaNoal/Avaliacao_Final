@@ -26,14 +26,14 @@ model.fit(features_treino,classes_treino)
 predicoes = model.predict(features_teste)
 
 
-st.title('Aplicativo de IA')
+st.title('Saúde Materna')
 Age = st.number_input('Digite a idade')
 SystolicBP = st.number_input('Digite a pressao sistolica')
 DiastolicBP = st.number_input('Digite a pressao diastolica')
 BodyTemp = st.number_input('Digite a temperatura corporal')
 HeartRate = st.number_input('Digite a frequencia cardiaca')
 if st.button('Clique aqui'):
-  resultado = model.predict([[SepalLengthCm,SepalWidthCm,PetalLengthCm,PetalWidthCm]])
+  resultado = model.predict([[Age,SystolicBP,DiastolicBP,BodyTemp,HeartRate]])
   
   if resultado == ('Iris-setosa'):
     st.write('setosa')
