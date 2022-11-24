@@ -35,14 +35,3 @@ HeartRate = st.number_input('Digite a frequencia cardiaca')
 if st.button('Clique aqui'):
   resultado = model.predict([[Age,SystolicBP,DiastolicBP,BodyTemp,HeartRate]])
   
-  if resultado == ('Iris-setosa'):
-    st.write('setosa')
-    st.image('iris_setosa.jpg')
-    
-  if resultado == ('Iris-versicolor'):
-    st.write('versicolor')
-    st.image('iris_versicolor.jpg')
-   
-  if resultado == ('Iris-virginica'):
-    st.write('virginica')
-    st.image('iris_virginica.jpg')
