@@ -7,7 +7,7 @@ dados = pd.read_csv('Dados de Risco à Saúde Materna.csv')
 
 
 
-classes = dados['Species']
+classes = dados['RiskLevel']
 nomesColunas = dados.columns.to_list()
 tamanho = len(nomesColunas)
 nomesColunas = nomesColunas[1:tamanho-1]
