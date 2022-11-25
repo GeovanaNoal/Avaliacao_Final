@@ -35,3 +35,13 @@ HeartRate = st.number_input('Digite a frequencia cardiaca')
 if st.button('Clique aqui'):
   resultado = model.predict([[Age,SystolicBP,DiastolicBP,BodyTemp,HeartRate]])
   
+if resultado == ('high risk'):
+  st.write('alto risco')
+
+if resultado == ('mid risk'):
+  st.write('risco medio')
+
+if resultado == ('low risk'):
+  st.write('risco baixo') 
+  
+  
