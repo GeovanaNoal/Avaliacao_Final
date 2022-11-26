@@ -36,12 +36,12 @@ if st.button('Clique aqui'):
   resultado = model.predict([[Age,SystolicBP,DiastolicBP,BodyTemp,HeartRate]])
   
   if resultado == ('high risk'):
-    st.write('alto risco')
+    st.write('Alto Risco')
 
   if resultado == ('mid risk'):
-    st.write('risco medio')
+    st.write('Médio Risco')
 
   if resultado == ('low risk'):
-    st.write('risco baixo')
+    st.write('Baixo Risco')
   
   
