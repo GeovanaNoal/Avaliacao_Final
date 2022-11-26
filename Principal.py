@@ -42,6 +42,6 @@ if resultado == ('mid risk'):
   st.write('risco medio')
 
 if resultado == ('low risk'):
-  st.write('risco baixo') 
+  st.write('risco baixo')
   
   
