@@ -26,11 +26,7 @@ model.fit(features_treino,classes_treino)
 predicoes = model.predict(features_teste)
 
 
-st.title('Saúde Materna')
-  if resultado == ('Saúde Materna'):
-    st.write('saude materna')
-    st.image('gravida.jpg')
-    
+st.title('Saúde Materna')    
 Age = st.number_input('Digite a idade')
 SystolicBP = st.number_input('Digite a pressão sistólica')
 DiastolicBP = st.number_input('Digite a pressao diastólica')
