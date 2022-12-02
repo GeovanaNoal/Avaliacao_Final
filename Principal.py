@@ -28,10 +28,10 @@ predicoes = model.predict(features_teste)
 
 st.title('Saúde Materna')
 Age = st.number_input('Digite a idade')
-SystolicBP = st.number_input('Digite a pressao sistolica')
-DiastolicBP = st.number_input('Digite a pressao diastolica')
+SystolicBP = st.number_input('Digite a pressao sistólica')
+DiastolicBP = st.number_input('Digite a pressao diastólica')
 BodyTemp = st.number_input('Digite a temperatura corporal')
-HeartRate = st.number_input('Digite a frequencia cardiaca')
+HeartRate = st.number_input('Digite a frequência cardíaca')
 if st.button('Clique aqui'):
   resultado = model.predict([[Age,SystolicBP,DiastolicBP,BodyTemp,HeartRate]])
   
