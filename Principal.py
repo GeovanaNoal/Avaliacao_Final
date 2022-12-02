@@ -30,10 +30,11 @@ st.title('Saúde Materna')
 Age = st.number_input('Digite a idade',step=1)
 SystolicBP = st.number_input('Digite a pressão sistólica')
 DiastolicBP = st.number_input('Digite a pressao diastólica')
+BS = st.number_input('Digite o BS')
 BodyTemp = st.number_input('Digite a temperatura corporal')
 HeartRate = st.number_input('Digite a frequência cardíaca')
 if st.button('Clique aqui'):
-  resultado = model.predict([[Age,SystolicBP,DiastolicBP,BodyTemp,HeartRate]])
+  resultado = model.predict([[Age,SystolicBP,DiastolicBP,BS,BodyTemp,HeartRate]])
   
   if resultado == ('high risk'):
     st.write('Alto Risco')
