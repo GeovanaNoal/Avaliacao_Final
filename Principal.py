@@ -10,7 +10,7 @@ dados = pd.read_csv('Dados de Risco à Saúde Materna.csv')
 classes = dados['RiskLevel']
 nomesColunas = dados.columns.to_list()
 tamanho = len(nomesColunas)
-nomesColunas = nomesColunas[1:tamanho-1]
+nomesColunas = nomesColunas[:tamanho-1]
 features = dados[nomesColunas]
 
 from sklearn.model_selection import train_test_split
