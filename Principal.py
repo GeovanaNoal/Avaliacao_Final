@@ -27,7 +27,7 @@ predicoes = model.predict(features_teste)
 
 
 st.title('Saúde Materna')    
-Age = st.number_input('Digite a idade')
+Age = st.number_input('Digite a idade',step=1)
 SystolicBP = st.number_input('Digite a pressão sistólica')
 DiastolicBP = st.number_input('Digite a pressao diastólica')
 BodyTemp = st.number_input('Digite a temperatura corporal')
